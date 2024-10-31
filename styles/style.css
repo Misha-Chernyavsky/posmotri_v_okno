@@ -8,19 +8,6 @@ html {
   block-size: 100%;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  inline-size: 100%;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
-}
-
 h1,
 h2,
 h3,
@@ -39,6 +26,19 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
 }
 
 .visually-hidden {
@@ -71,12 +71,11 @@ ol {
 .content__list {
   position: relative;
   height: 298px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .content__details {
-  width: 399px;
+  width: 402px;
   height: 100%;
 }
 
@@ -141,6 +140,10 @@ ol {
 }
 
 .content__video-card-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
   font-family: Oswald, sans-serif;
   font-size: 30px;
   line-height: 30px;
